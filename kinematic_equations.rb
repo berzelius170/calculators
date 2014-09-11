@@ -21,7 +21,7 @@ if want == "distance"
 	d11 = vi * t
 	d12 = a * t ** 2 / 2
 	d1t = d11 + d12
-	puts "#{d1t} meters"
+	puts "We used the equation 'd = Vi * t + .5 * a * t** 2' to find that d = #{d1t} meters"
 elsif want == "time"
 	puts "What is the initial velocity (m/s)?"
 		vi2 = gets.chomp.to_f
@@ -31,7 +31,7 @@ elsif want == "time"
 		a2 = gets.chomp.to_f
 	top2 = vf2 - vi2
 	time = top2 / a2
-	puts "#{time} seconds"
+	puts "We used the equation '(Vf - Vi) / a = t' to find that t = #{time} seconds"
 elsif want == "final velocity" 
 	puts "What is the initial velocity (m/s)?"
 		vi3 = gets.chomp.to_f
@@ -40,7 +40,7 @@ elsif want == "final velocity"
 	puts "What is the time (s)?"
 		t3 = gets.chomp.to_f
 	vf3 = vi3 + a3* t3
-	puts "#{vf3} meters/second"
+	puts "We used the equation 'Vf = Vi + a * t' to find that Vf = #{vf3} meters/second"
 elsif want == "initial velocity"
 	puts "What is the final velocity (m/s)?"
 		vf4 = gets.chomp.to_f
@@ -49,7 +49,7 @@ elsif want == "initial velocity"
 	puts "What is the time (s)?"
 		t4 = gets.chomp.to_f
 	vi4 = vf4 - a4 * t4
-	puts "#{vi4} meters/second"
+	puts "We used the equation 'Vi = Vf - a * t' to find that Vi = #{vi4} meters/second"
 else want == "acceleration"
 	puts "What is the initial velocity (m/s)?"
 		vi5 = gets.chomp.to_f
@@ -59,5 +59,5 @@ else want == "acceleration"
 		t5 = gets.chomp.to_f
 	top5 = vf5 - vi5
 	a5 = top5 / t5
-	puts "#{a5} meters/second^2"
+	puts "We used the equation 'a = (Vf - Vi) / t' to find that a = #{a5} meters/second^2"
 end
