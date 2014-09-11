@@ -2,7 +2,7 @@
 puts "What are you looking for: distance, time, final velocity, initial velocity, or acceleration?"
         want = gets.chomp
 
-until want == " distance" or want == "time" or want == "acceleration" or want == "final velocity" or want == "initial velocity" do
+until want == "distance" or want == "time" or want == "acceleration" or want == "final velocity" or want == "initial velocity" do
 	puts "Please enter one of the following exactly:
 	acceleration
 	distance
